@@ -1,0 +1,28 @@
+{
+  "dates": {
+    "maximum": "2022-06-01",
+    "minimum": "2022-04-14"
+  },
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/iniPathBackdrop",
+      "genre_ids": [
+        1,
+        2
+      ],
+      "id": 200,
+      "original_language": "ina",
+      "original_name": "OriginaliniBos",
+      "overview": "YainiOverviewnya",
+      "popularity": 220.8,
+      "poster_path": "/iniPathPoster",
+      "first_air_date": "2020-01-03",
+      "name": "iniNamanya",
+      "vote_average": 9.6,
+      "vote_count": 20000
+    }
+  ],
+  "total_results": 200,
+  "total_pages": 15
+}
