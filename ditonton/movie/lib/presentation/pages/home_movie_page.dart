@@ -96,7 +96,6 @@ class _HomeMoviePageState extends State<HomeMoviePage> {
         actions: [
           IconButton(
             onPressed: () {
-              FirebaseCrashlytics.instance.crash();
               Navigator.pushNamed(context, MovieSearchPage.ROUTE_NAME);
             },
             icon: const Icon(Icons.search),
