@@ -8,7 +8,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movie/movie.dart';
 import 'package:search/search.dart';
 import 'package:tv/tv.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
 
 class HomeMoviePage extends StatefulWidget {
