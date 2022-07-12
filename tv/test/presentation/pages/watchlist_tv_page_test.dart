@@ -56,7 +56,7 @@ void main() {
     expect(find.byType(Padding), findsWidgets);
     expect(find.byType(ListView), findsOneWidget);
     expect(find.byType(TvCardList), findsOneWidget);
-    expect(find.byKey(const Key('watchlist Tv page')), findsOneWidget);
+    expect(find.byKey(const Key('watchlist tv page')), findsOneWidget);
   });
 
   testWidgets('Should display text with message when error',
