@@ -23,7 +23,7 @@ void main() {
   );
   final tvResponseModelTest = TvResponse(tvList: <TvModel>[modelTvTest]);
   group('fromJson', () {
-    test('should return a valid TV series models from JSON', () async {
+    test('should return a valid tv models from JSON', () async {
       // arrange
       final Map<String, dynamic> jsonMap =
           json.decode(readJson('dummy/on_the_air_tv.json'));
