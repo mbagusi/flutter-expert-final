@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 
 class Ssl extends IOClient {
   Future<SecurityContext> get globalContext async {
-    final sslCert = await rootBundle.load('certificates/certificates.pem');
+    final sslCert = await rootBundle.load('certificates/certificate.cer');
     SecurityContext securityContext = SecurityContext(withTrustedRoots: false);
     securityContext.setTrustedCertificatesBytes(sslCert.buffer.asInt8List());
     return securityContext;

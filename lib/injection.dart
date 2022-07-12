@@ -1,3 +1,4 @@
+import 'package:core/utils/ssl.dart';
 import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
 import 'package:movie/movie.dart';
@@ -108,6 +109,7 @@ void init() {
   locator.registerLazySingleton(() => SaveTvWatchlist(locator()));
   locator.registerLazySingleton(() => RemoveTvWatchlist(locator()));
   locator.registerLazySingleton(() => GetWatchlistTv(locator()));
+  locator.registerLazySingleton(() => Ssl());
 
   //movie repository
   locator.registerLazySingleton<MovieRepository>(

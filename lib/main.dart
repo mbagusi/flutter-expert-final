@@ -11,21 +11,13 @@ import 'package:core/core.dart';
 import 'package:search/search.dart';
 import 'package:tv/tv.dart';
 
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   di.init();
   runApp(MyApp());
 }
-
-class MyHttpOverrides extends HttpOverrides{
-  @override
-  HttpClient createHttpClient(SecurityContext? context){
-    return super.createHttpClient(context)
-      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
-  }
-}
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
