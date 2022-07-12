@@ -73,7 +73,6 @@ class TvRemoteDataSourceImpl implements TvRemoteDataSource {
     clientCert.badCertificateCallback =
         (X509Certificate cert, String host, int port) => false;
     IOClient ioClient = IOClient(clientCert);
-    
 
     final response =
         await ioClient.get(Uri.parse('$BASE_URL/tv/top_rated?$API_KEY'));
@@ -84,7 +83,6 @@ class TvRemoteDataSourceImpl implements TvRemoteDataSource {
       throw ServerException();
     }
   }
-  
 
   @override
   Future<TvDetailResponse> getTvDetail(int id) async {
